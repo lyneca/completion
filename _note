@@ -15,8 +15,8 @@ function _note {
 }
 
 function _note_del {
-    _files -W "$HOME/.notes"
+    _files -g "$HOME/.notes/*.md"
 }
 function _note_edit {
-    _files -W "$HOME/.notes"
+    _files -W "$HOME/.notes/*.md"
 }
