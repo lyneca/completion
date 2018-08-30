@@ -3,7 +3,7 @@
 function _note {
     local line
     _arguments -C \
-        "1: :(add del list open)"
+        "1: :(add del list edit)"
     case $line[1] in
         del)
             _note_del
