@@ -4,7 +4,7 @@ function _note {
     local line
 
     _arguments -C \
-        "1: :(del list)" \
+        "1: :(del list pdf)" \
         "*::arg:->args"
 
     _files -W "$HOME/.notes" -g '*.md(:r)'
