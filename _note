@@ -1,0 +1,22 @@
+#compdef _note note
+
+function _note {
+    local line
+    _arguments -C \
+        "1: :(add del list open)"
+    case $line[1] in
+        del)
+            _note_del
+            ;;
+        edit)
+            _note_edit
+            ;;
+    esac
+}
+
+function _note_del {
+    _files -W "$HOME/.notes"
+}
+function _note_edit {
+    _files -W "$HOME/.notes"
+}
