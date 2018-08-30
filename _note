@@ -4,17 +4,8 @@ function _note {
     local line
 
     _arguments -C \
-        "1: :(add del list edit)" \
+        "1: :(del list)" \
         "*::arg:->args"
 
-    if [ -z "$line[2]" ]; then
-        case $line[1] in
-            del)
-                _files -W "$HOME/.notes"
-                ;;
-            edit)
-                _files -W "$HOME/.notes"
-                ;;
-        esac
-    fi
+    _files -W "$HOME/.notes" -g '*.md(:r)'
 } 
