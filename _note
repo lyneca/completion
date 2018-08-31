@@ -4,7 +4,9 @@ function _note {
     local line
 
     _arguments -C \
-        "1: :(del list pdf)" \
+        "-l[List all notes]" \
+        "-d[Delete a note]" \
+        "-p[Convert a note to PDF]" \
         "*::arg:->args"
 
     _files -W "$HOME/.notes" -g '*.md(:r)'
