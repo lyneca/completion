@@ -1,3 +1,3 @@
-# zsh-note-completion
+# zsh-mdn-completion
 
-ZSH Autocompletion script for [note](https://github.com/lyneca/note).
+ZSH Autocompletion script for [mdn](https://github.com/lyneca/mdn).

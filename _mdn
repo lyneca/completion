@@ -1,0 +1,14 @@
+#compdef _mdn mdn
+
+function _mdn {
+    local line
+
+    _arguments -C \
+        "-d[Delete a note]" \
+        "-l[List all notes]" \
+        "-n[Symlink a note to the cwd]" \
+        "-p[Convert a note to PDF]" \
+        "*::arg:->args"
+
+    _files -W "$HOME/.mdn" -g '*.md(:r)'
+} 
