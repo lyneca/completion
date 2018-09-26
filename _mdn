@@ -6,7 +6,9 @@ function _mdn {
     _arguments -C \
         "-d[Delete a note]" \
         "-l[List all notes]" \
-        "-n[Symlink a note to the cwd]" \
+        "-n[Symlink a note to the current directory]" \
+        "-m[Move a note to the current directory]" \
+        "-c[Copy a note to the current directory]" \
         "-p[Convert a note to PDF]" \
         "*::arg:->args"
 
